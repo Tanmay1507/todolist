@@ -1,5 +1,5 @@
 import mongoose, { connect } from "mongoose"
-const url="mongodb+srv://tanmaywagh2101_db_user:todoList123@todolist.euproih.mongodb.net/?appName=todoList"
+const url="/*enter your mongoDB URL*/"
 
 const connectDB =async function connectDB() {
      await mongoose.connect(url)
