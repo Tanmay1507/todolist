@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
+    <title>todoList</title>
+</head>
+<body>
+  <div class="whole">
+    <%- include("nev.ejs") %>
+     <h3>add task</h3>
+     <form action="/addtask" method="post">
+          <input type="task" name="task" placeholder="enter your task..." required>
+          <button type="submit">add Task</button>
+        </form>
+        <form action="" method="POST">
+     <!-- <h3>Select a Task to Update:</h3>
+    
+
+</form>
+<h3>all task</h3>  -->
+    <form  method="post">
+      
+      <% for (let i=0;i<allTask.length;i++ ){ %>
+        <input type="radio" name="selectedId" value="<%- allTask[i].id %>" required>
+        <label for="selectedId"><%=allTask[i].task%></label>
+       <br>
+        <% } %>
+        <div class="actions">
+        <input type="text" name="updatedData" placeholder="enter your updated task" > 
+        <button type="submit" formaction="/updateTask">update task</button>
+        <button type="submit" formaction="/deleteTask" style="background-color: red; color: white;">
+            delete task
+        </button>
+
+      </div>
+      </form> 
+</div>
+      
+</body>
+</html>
