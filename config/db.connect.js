@@ -1,9 +1,6 @@
 import mongoose, { connect } from "mongoose"
-import dotenv from "dotenv"
-dotenv.config()
-if (!process.env.url){
-    console.log ("you don't have any conection url of mongodb")
-}
+const url="mongodb+srv://tanmaywagh2101_db_user:todoList123@todolist.euproih.mongodb.net/?appName=todoList"
+
 const connectDB =async function connectDB() {
      await mongoose.connect(process.env.url)
     console.log("you have connected to database :)")
