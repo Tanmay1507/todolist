@@ -1,0 +1,96 @@
+body{
+    
+    background-color:rgb(11, 40, 15);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    justify-content:  center;
+    align-items: center;
+}
+.logo{
+    width: 100vh;
+    display: flex;
+    gap: 5px;
+    background-color: rgb(43, 98, 80);
+    border-radius: 20px;
+    padding:10px ;
+    align-items: center;
+}
+.logo img{
+    height: 40px;
+    width: 40px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+.logo p{
+    color: aliceblue;
+}
+
+.logo h3 {
+    width: 150px;
+    margin-left: 150px;
+    color: aliceblue;
+    font-size: 130x;
+}
+.whole
+ {  margin-top: 20px;
+    height: 550px;
+    width: 300px;
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.textinput{
+    width: 250px;
+    height: 30px;
+    border: 0px solid black;
+    /* border-bottom: 3px; */
+   
+    background-color: aliceblue;
+}
+.allItems{
+    width: 280px;
+    height:340px ;
+    overflow: auto;  
+}
+.tasks{
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 265px;
+    height: 50px;
+    background-color: rgb(57, 107, 70);
+    padding-left: 10px;
+    border: 1px solid #383131;
+    border-radius: 10px;
+    color: aliceblue;
+}
+.textfild{
+    display: flex;
+    border: 1px solid #111;
+    width: 265px;
+    height: 50px;
+    border-radius: 20px;
+    padding: 5px;
+    gap: 5px;
+}
+.textfild button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: aquamarine;
+}
+.Delete{
+    margin-top: 10px;
+    width: 265px;
+    border-radius: 20px;
+    background-color: red;
+}
